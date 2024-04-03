@@ -14,7 +14,38 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Formulário de Login</h1>
+    <div class="forms">
+      <ion-input
+        type="email"
+        fill="solid"
+        label="Email"
+        labelPlacement="floating"
+        errorText="Invalid email"
+        ngModel
+        email
+
+        id="form"
+      ></ion-input>
+      <ion-input
+        type="password"
+        fill="solid"
+        label="Password"
+        labelPlacement="floating"
+        errorText="Invalid password"
+        ngModel
+        email
+
+        id=""
+      ></ion-input>
+      <div id="ion-button">
+        <ion-button id="button" shape="round" routerLink="/logado">
+          Login
+        </ion-button>
+        <ion-button id="button" shape="round">
+          Cadastrar
+        </ion-button>
+      </div>
+    </div>
   </div>
 </ion-content>
